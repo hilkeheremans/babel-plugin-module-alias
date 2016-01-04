@@ -31,6 +31,7 @@
   "scripts": {
     "lint": "eslint src test",
     "build": "babel src --out-dir lib",
+    "postinstall": "babel src --out-dir lib",
     "push": "babel-plugin publish",
     "test": "mocha --compilers js:babel-core/register",
     "posttest": "npm run lint"
